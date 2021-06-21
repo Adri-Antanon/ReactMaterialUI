@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@material-ui/core/styles";
 import App from "./App";
 
-import theme from "./Introduction/theme";
+import theme from "./1-Introduction/theme";
 
 ReactDOM.render(
   <React.StrictMode>

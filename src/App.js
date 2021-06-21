@@ -1,9 +1,11 @@
-import Introduction from "./Introduction";
+// import Introduction from "./1-Introduction";
+import CodingUXDesign from "./2-CodingAUXDesign";
 
 function App() {
   return (
     <>
-      <Introduction />
+      {/* <Introduction /> */}
+      <CodingUXDesign />
     </>
   );
 }

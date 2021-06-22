@@ -1,7 +1,8 @@
 // import Introduction from "./1-Introduction";
 // import CodingUXDesign from "./2-CodingAUXDesign";
 // import MakeStyles from "./3-makeStyles";
-import Buttons from "./4-Button";
+// import Buttons from "./4-Button";
+import Typo from './5-Typography';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <Introduction /> */}
       {/* <CodingUXDesign /> */}
       {/* <MakeStyles /> */}
-      <Buttons />
+      {/* <Buttons /> */}
+      <Typo />
     </>
   );
 }

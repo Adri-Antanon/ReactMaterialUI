@@ -1,28 +1,20 @@
-import { Grid } from '@material-ui/core';
-import React from 'react';
-import CoffeCard from './CoffeCard';
+import { Grid } from "@material-ui/core";
+import React from "react";
+import CoffeCard from "./CoffeCard";
+
+import cardInfo from "./constants";
 
 const Content = () => {
+  const getCardInfo = (card) => {
+    return (
+      <Grid item xs={12} sm={4}>
+        <CoffeCard {...card} />
+      </Grid>
+    );
+  };
   return (
     <Grid container spacing={4}>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard title={"Test"} avatarSrc={"/static/images/avatar/1.JPG"} subtitle={"10€"} />
-      </Grid>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard />
-      </Grid>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard />
-      </Grid>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard />
-      </Grid>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard />
-      </Grid>
-      <Grid item xs={12} sm={4} >
-        <CoffeCard />
-      </Grid>
+      {cardInfo.map((card) => getCardInfo(card))}
     </Grid>
   );
 };
